@@ -22,8 +22,8 @@ public class EmergencyController {
 
     @PostMapping("/emergencyList") // 응급 실시간 현황데이터
     public ResponseEntity<?> getEmergencyCall(@RequestBody EmergencyRequest emergencyRequest){
-        logger.info("STAGE1: " + emergencyRequest.getSTAGE1());
-        logger.info("STAGE2: " + emergencyRequest.getSTAGE2());
+        logger.info("STAGE1: " + emergencyRequest.getSelectedCity());
+        logger.info("STAGE2: " + emergencyRequest.getSelectedDistrict());
 
         return ResponseEntity.ok(emergencyService.callRealtimeEmergency(emergencyRequest));
     }

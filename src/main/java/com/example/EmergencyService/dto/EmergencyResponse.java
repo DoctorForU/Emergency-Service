@@ -12,8 +12,8 @@ public class EmergencyResponse {
     private String hvidate; // 입력일시
     private String hvdnm; // 당직의
     private String hv1; // 응급실 당직의 직통연락처
-    private String dutyname; // 기관명
-    private String dutytel3; // 응급실전화
+    private String dutyName; // 기관명
+    private String dutyTel3; // 응급실전화
 
 
     private String hvec; // 일반

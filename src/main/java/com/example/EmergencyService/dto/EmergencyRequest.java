@@ -8,6 +8,6 @@ import lombok.Data;
 @Builder
 @AllArgsConstructor
 public class EmergencyRequest { // 실시간 응급 상황판
-    private String STAGE1; // 주소(시도)
-    private String STAGE2; // 주소(시군구)
+    private String selectedCity; // 주소(시도)
+    private String selectedDistrict; // 주소(시군구)
 }
