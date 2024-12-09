@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: http://127.0.0.1:8888
+      uri: http://eureka-container:8888
       name: datagokr
   profiles:
     active: dev
